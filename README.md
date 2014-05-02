@@ -1,4 +1,7 @@
 # jQuery Drawer
+jQuery Drawer is a plugin that helps you build off screen menus.
+This [example](http://proximity.github.io/jquery-drawer/example/) shows
+the very basics.
 
 ## Options
 
