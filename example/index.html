@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Drawer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div id="primary-menu" class="menu menu-left"></div>
+		<div class="content">
+			<a href="#" id="primary-menu-toggle" class="menu-toggle"></a>
+			<a href="#" id="secondary-menu-toggle" class="menu-toggle"></a>
+		</div>
+		<div id="secondary-menu" class="menu menu-right"></div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="../jquery.drawer.js"></script>
+	<script>
+		$(function() {
+			$('#primary-menu-toggle').drawer({
+				menu: '#primary-menu',
+				push: '.content',
+				class: 'menu-open'
+			});
+
+			$('#secondary-menu-toggle').drawer({
+				menu: '#secondary-menu',
+				push: '.content',
+				side: 'right',
+				class: 'menu-open'
+			});
+		});
+	</script>
+</body>
+</html>
